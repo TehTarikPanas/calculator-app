@@ -1,32 +1,32 @@
-<div class="container">
-  <h1>BMI Calculator</h1>
+<head>
+  <meta charset="utf-8" />
+  <title>Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
+<body>
+  <div class="container">
+    <h1>BMI Calculator</h1>
 
-  <div class="form-group">
-    <label>Weight (kg)</label>
-    <input
-      type="number"
-      [(ngModel)]="weight"
-      placeholder="Enter your weight"
-    />
+    <div class="form-group">
+      <label>Weight (kg)</label>
+      <input type="number" [(ngModel)]="weight" placeholder="Enter your weight" />
+    </div>
+
+    <div class="form-group">
+      <label>Height (cm)</label>
+      <input type="number" [(ngModel)]="height" placeholder="Enter your height" />
+    </div>
+
+    <button (click)="calculateBMI()">Calculate BMI</button>
+
+    <p class="error" *ngIf="errorMessage">
+      {{ errorMessage }}
+    </p>
+
+    <div class="result" *ngIf="bmi !== null">
+      <p><strong>BMI:</strong> {{ bmi }}</p>
+      <p><strong>Category:</strong> {{ category }}</p>
+    </div>
   </div>
-
-  <div class="form-group">
-    <label>Height (cm)</label>
-    <input
-      type="number"
-      [(ngModel)]="height"
-      placeholder="Enter your height"
-    />
-  </div>
-
-  <button (click)="calculateBMI()">Calculate BMI</button>
-
-  <p class="error" *ngIf="errorMessage">
-    {{ errorMessage }}
-  </p>
-
-  <div class="result" *ngIf="bmi !== null">
-    <p><strong>BMI:</strong> {{ bmi }}</p>
-    <p><strong>Category:</strong> {{ category }}</p>
-  </div>
-</div>
+</body>
