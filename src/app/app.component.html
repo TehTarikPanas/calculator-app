@@ -3,6 +3,7 @@
   <title>Calculator</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="stylesheet" href="app.component.css" />
 </head>
 <body>
   <div class="container">
@@ -24,7 +25,7 @@
       {{ errorMessage }}
     </p>
 
-    <div class="result" *ngIf="bmi !== null">
+    <div class="result" *ngIf="bmi !== null" [ngClass]="getCategoryClass()">
       <p><strong>BMI:</strong> {{ bmi }}</p>
       <p><strong>Category:</strong> {{ category }}</p>
     </div>

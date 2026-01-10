@@ -7,10 +7,9 @@ import { FormsModule } from '@angular/forms';
   standalone: true,
   imports: [CommonModule, FormsModule],
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-
   weight: number | null = null;
   height: number | null = null;
 
@@ -24,12 +23,7 @@ export class AppComponent {
     this.category = '';
 
     // Input validation
-    if (
-      this.weight === null ||
-      this.height === null ||
-      this.weight <= 0 ||
-      this.height <= 0
-    ) {
+    if (this.weight === null || this.height === null || this.weight <= 0 || this.height <= 0) {
       this.errorMessage = 'Please enter valid positive values for weight and height.';
       return;
     }
@@ -51,5 +45,21 @@ export class AppComponent {
     } else {
       this.category = 'Obese';
     }
+  }
+
+  // Returns the CSS class name for styling based on BMI category
+  getCategoryClass(): string {
+    if (this.bmi !== null) {
+      if (this.bmi < 18.5) {
+        return 'underweight';
+      } else if (this.bmi >= 18.5 && this.bmi <= 24.9) {
+        return 'normal';
+      } else if (this.bmi >= 25 && this.bmi <= 29.9) {
+        return 'overweight';
+      } else {
+        return 'obese';
+      }
+    }
+    return '';
   }
 }
