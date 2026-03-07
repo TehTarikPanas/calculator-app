@@ -6,10 +6,10 @@ import { FormsModule } from '@angular/forms';
   selector: 'app-root',
   standalone: true,
   imports: [CommonModule, FormsModule],
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  templateUrl: './bmi.component.html',
+  styleUrls: ['./bmi.component.css'],
 })
-export class AppComponent {
+export class BmiComponent {
   weight: number | null = null;
   height: number | null = null;
 
