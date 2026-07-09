@@ -24,7 +24,7 @@ export class BmiComponent {
 
     // Input validation
     if (this.weight === null || this.height === null || this.weight <= 0 || this.height <= 0) {
-      this.errorMessage = 'Please enter valid positive values for weight and height.';
+      this.errorMessage = 'N/A';
       return;
     }
 
@@ -45,21 +45,5 @@ export class BmiComponent {
     } else {
       this.category = 'Obese';
     }
-  }
-
-  // Returns the CSS class name for styling based on BMI category
-  getCategoryClass(): string {
-    if (this.bmi !== null) {
-      if (this.bmi < 18.5) {
-        return 'underweight';
-      } else if (this.bmi >= 18.5 && this.bmi <= 24.9) {
-        return 'normal';
-      } else if (this.bmi >= 25 && this.bmi <= 29.9) {
-        return 'overweight';
-      } else {
-        return 'obese';
-      }
-    }
-    return '';
   }
 }

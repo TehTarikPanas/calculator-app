@@ -2,32 +2,48 @@
   <meta charset="utf-8" />
   <title>BMI Calculator</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="icon" type="image/x-icon" href="/assets/dango-cursor.svg" />
   <link rel="stylesheet" href="bmi.component.css" />
 </head>
 <body>
   <div class="container">
-    <h1>BMI Calculator</h1>
+    <div class="calculator-base">
+      <img src="/assets/calculator-base.png" alt="" />
+    </div>
+  </div>
 
-    <div class="form-group">
-      <label>Weight (kg)</label>
-      <input type="number" [(ngModel)]="weight" placeholder="Enter your weight" />
+  <div class="bmi-result">
+    <div class="bmi-value">BMI: {{ errorMessage ? errorMessage : bmi }}</div>
+    <div class="bmi-category">Category: {{ errorMessage ? errorMessage : category }}</div>
+  </div>
+
+  <div class="bmi-inputs">
+    <div class="bmi-input-group">
+      <label for="height">Your Height (CM)</label>
+      <input
+        type="text"
+        id="height"
+        name="height"
+        [(ngModel)]="height"
+        placeholder="Enter Your Height"
+        class="bmi-input"
+      />
     </div>
 
-    <div class="form-group">
-      <label>Height (cm)</label>
-      <input type="number" [(ngModel)]="height" placeholder="Enter your height" />
+    <div class="bmi-input-group">
+      <label for="weight">Your Weight (KG)</label>
+      <input
+        type="text"
+        id="weight"
+        name="weight"
+        [(ngModel)]="weight"
+        placeholder="Enter Your Weight"
+        class="bmi-input"
+      />
     </div>
+  </div>
 
-    <button (click)="calculateBMI()">Calculate BMI</button>
-
-    <p class="error" *ngIf="errorMessage">
-      {{ errorMessage }}
-    </p>
-
-    <div class="result" *ngIf="bmi !== null" [ngClass]="getCategoryClass()">
-      <p><strong>BMI:</strong> {{ bmi }}</p>
-      <p><strong>Category:</strong> {{ category }}</p>
-    </div>
+  <div class="bmi-button-container">
+    <button class="bmi-button" (click)="calculateBMI()">Do your magic</button>
   </div>
 </body>

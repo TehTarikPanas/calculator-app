@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Pixelify+Sans:wght@400..700&display=swap');
+
+:root {
+  --color-brown: #c6a88e;
+  --color-light-green: #dde1bc;
+  --color-medium-green: #bec194;
+  --color-dark-green: #677e52;
+  --color-yellow: #f2e09a;
+  --color-light-gray: #637871;
+
+  --hero-title-font-size-desktop: 96px;
+  --section-title-font-size-desktop: 48px;
+  --heading-font-size-desktop: 24px;
+  --section-label-font-size-desktop: 22px;
+  --subheading-font-size-desktop: 36px;
+  --paragraph-font-size-desktop: 18px;
+  --body-font-size-desktop: 16px;
+  --label-font-size-desktop: 14px;
+
+  --hero-title-font-size-mobile: 48px;
+  --section-title-font-size-mobile: 32px;
+  --heading-font-size-mobile: 18px;
+  --section-label-font-size-mobile: 16px;
+  --subheading-font-size-mobile: 26px;
+  --paragraph-font-size-mobile: 16px;
+  --body-font-size-mobile: 14px;
+  --label-font-size-mobile: 10px;
+  --small-font-size-mobile: 8px;
+  /* --label-font-size-mobile: 12px; */
+
+  --padding-xs: 4px;
+  --padding-sm: 8px;
+  --padding-md: 16px;
+  --padding-lg: 24px;
+  --padding-xl: 32px;
+  --padding-xxl: 48px;
+  --padding-xxxl: 78px;
+
+  --gap-xs: 8px;
+  --gap-sm: 12px;
+  --gap-md: 20px;
+  --gap-lg: 30px;
+  --gap-xl: 40px;
+  --gap-xxl: 60px;
+
+  /* Page & Section defaults */
+  --page-padding-horizontal: 10px;
+  --page-padding-vertical: 100px;
+  --section-gap: 150px;
+
+  --main-font: 'Gloria Hallelujah', sans-serif;
+}
