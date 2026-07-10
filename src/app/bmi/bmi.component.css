@@ -20,6 +20,20 @@ body {
   overflow: hidden;
 }
 
+.update-banner {
+  position: absolute; /* overlay on top of base image */
+  top: 20px;
+  left: 46%;
+  transform: translateX(-50%);
+  background-color: var(--color-yellow);
+  color: var(--color-dark-green);
+  padding: 10px 20px;
+  font-size: var(--paragraph-font-size-desktop);
+  font-family: var(--main-font);
+  z-index: 999;
+  border-radius: 21px;
+}
+
 .calculator-base {
   width: 100%;
   max-width: 900px;
@@ -102,6 +116,20 @@ body {
 
 /* Responsive - Mobile */
 @media (max-width: 480px) {
+  .update-banner {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--color-yellow);
+    color: var(--color-dark-green);
+    padding: 10px 20px;
+    font-size: var(--paragraph-font-size-desktop);
+    font-family: var(--main-font);
+    z-index: 999;
+    border-radius: 21px;
+  }
+
   .bmi-result {
     top: 41%;
     font-size: var(--label-font-size-mobile);
