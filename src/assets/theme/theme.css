@@ -28,6 +28,16 @@
   --small-font-size-mobile: 8px;
   /* --label-font-size-mobile: 12px; */
 
+  --hero-title-font-size-tablet: 64px;
+  --section-title-font-size-tablet: 40px;
+  --heading-font-size-tablet: 20px;
+  --section-label-font-size-tablet: 18px;
+  --subheading-font-size-tablet: 30px;
+  --paragraph-font-size-tablet: 16px;
+  --body-font-size-tablet: 15px;
+  --label-font-size-tablet: 12px;
+  --small-font-size-tablet: 10px;
+
   --padding-xs: 4px;
   --padding-sm: 8px;
   --padding-md: 16px;
