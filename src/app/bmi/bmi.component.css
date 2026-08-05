@@ -126,7 +126,7 @@ body {
 }
 
 /* Responsive - Mobile */
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .update-banner {
     position: absolute;
     top: 20px;
@@ -201,7 +201,7 @@ body {
 }
 
 /* Responsive - Tablet */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .update-banner {
     position: absolute;
     top: 15px;
@@ -269,4 +269,4 @@ body {
     font-size: var(--body-font-size-tablet);
     padding: var(--padding-sm);
   }
-}
+} */
