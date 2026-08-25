@@ -3,6 +3,9 @@
 ## About the Project
 The **Calculator App** is a responsive BMI calculator built with Angular. It allows users to input height and weight, then instantly calculates Body Mass Index (BMI) and displays the health category (underweight, normal, overweight, or obese).
 
+**Future Plan:**
+It will be updated to a Smart Health App later, expanding beyond BMI to provide broader health insights. That’s why I chose Angular for this project.
+
 ---
 
 ## Tech Stack
